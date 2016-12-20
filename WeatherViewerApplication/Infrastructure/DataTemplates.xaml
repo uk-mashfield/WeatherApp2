@@ -1,0 +1,11 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewModels="clr-namespace:WeatherViewerApplication.ViewModels"
+    xmlns:views="clr-namespace:WeatherViewerApplication.Views">
+
+    <DataTemplate DataType="{x:Type viewModels:TopLevelContentViewModel}">
+        <views:TopLevelContent />
+    </DataTemplate>
+
+</ResourceDictionary>

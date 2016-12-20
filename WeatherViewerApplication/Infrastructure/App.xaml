@@ -1,0 +1,16 @@
+﻿<Application x:Class="WeatherViewerApplication.Infrastructure.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ButtonTemplates.xaml" />
+                <ResourceDictionary Source="ValidatingControlTemplate.xaml" />
+                <ResourceDictionary Source="DataTemplates.xaml" />
+                <ResourceDictionary Source="BackGroundTemplate.xaml"/>
+                <ResourceDictionary Source="ApplicationTemplateDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="WeatherViewerApplication.Views.TopLevelContent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WeatherViewerApplication.Views"
+    xmlns:properties="clr-namespace:WeatherViewerApplication.Properties"
+    mc:Ignorable="d" 
+    d:DesignHeight="1000" d:DesignWidth="1900"
+    prism:ViewModelLocator.AutoWireViewModel="true">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource BackgroundBrush}">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" FontSize="20" FontWeight="Black" Content="Please enter your location" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+            <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"  Margin="20,0,30,5" Name="LocationControl" FontSize="20" Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=LocationValue, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+            <Button Grid.Row="0" Grid.Column="2" Style="{StaticResource WideButton}" Command="{Binding DataRetrievalButtonCommand}">
+                <AccessText>_Get Weather</AccessText>
+            </Button>
+        </Grid>
+        
+        <Grid Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>    
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Black" Content="Wind Speed"/>
+                <Label Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Black" Content="{Binding WindSpeed}"/>
+                <ComboBox Grid.Row="0" Grid.Column="3" Margin="20,0,30,5" ItemsSource="{Binding WindSpeedListItems}" SelectedItem="{Binding UpdateSourceTrigger=PropertyChanged, Path=CurrentlySelectedWindSpeed}" />
+
+                <Label Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Black" Content="Temperature"/>
+                <Label Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Black" Content="{Binding Temperature}"/>
+                <ComboBox Grid.Row="2" Grid.Column="3" Margin="20,0,30,5" ItemsSource="{Binding TemperatureListItems}" SelectedItem="{Binding UpdateSourceTrigger=PropertyChanged, Path=CurrentlySelectedTemperature}" />
+
+            </Grid>
+        </Grid>
+
+        <Button Grid.Row="3" Style="{StaticResource WideButton}" HorizontalAlignment="Center" Command="{Binding ExitCommand}">
+            <AccessText Text="_Exit"/>
+        </Button>
+    </Grid>
+</UserControl>

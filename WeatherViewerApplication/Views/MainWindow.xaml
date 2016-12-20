@@ -1,0 +1,14 @@
+﻿<Window x:Class="WeatherViewerApplication.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}"
+        WindowStartupLocation="CenterScreen" Background="White"
+        WindowStyle="None">
+    <DockPanel Background="White">
+        <ContentControl DockPanel.Dock="Top"  prism:RegionManager.RegionName="TitleRegion" Height="100"/>
+        <ContentControl DockPanel.Dock="Bottom" prism:RegionManager.RegionName="ContentRegion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,10,0,0" />
+    </DockPanel>
+
+</Window>

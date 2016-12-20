@@ -1,0 +1,140 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <FontFamily x:Key="DefaultFont">Segoe UI</FontFamily>
+    
+    <Style x:Key="ControlStyle" TargetType="Control">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+    </Style>
+    
+    <Style TargetType="Button" BasedOn="{StaticResource ControlStyle}"/>
+    <Style TargetType="Label" BasedOn="{StaticResource ControlStyle}"/>
+    <Style TargetType="ComboBox" BasedOn="{StaticResource ControlStyle}"/>
+    
+    <Style TargetType="AccessText">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+    </Style>
+    
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+    </Style>
+
+
+    <Style x:Key="ProgressFont" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="10"/>
+    </Style>
+
+    <Style x:Key="NotProgressFont" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Foreground" Value="DarkGray"/>
+    </Style>
+
+    <Style x:Key="Tick" TargetType="Label"> <!-- for a 20 point font -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Path Data="M21.972656,3.9968088 L22.485352,4.7292309 C20.395508,6.3014965 18.071289,8.7233715 15.512695,11.994856 C12.954102,15.26634 11.000977,18.322981 9.6533203,21.164778 L8.5693359,21.8972 C7.670898,22.5222 7.0605464,22.986067 6.7382813,23.288801 C6.6113276,22.829817 6.3330073,22.077864 5.9033203,21.032942 L5.4931641,20.080793 C4.9072266,18.713606 4.362793,17.702864 3.8598633,17.048567 C3.3569334,16.39427 2.7929685,15.9597 2.1679688,15.744856 C3.222656,14.631576 4.1894531,14.074935 5.0683594,14.074934 C5.820312,14.074935 6.655273,15.095443 7.5732422,17.136457 L8.0273438,18.161848 C9.6777344,15.378646 11.796875,12.673568 14.384766,10.046614 C16.972656,7.4196606 19.501953,5.403059 21.972656,3.9968088 z" Fill="Black" Margin="12.168,13.997,24.248,23.311" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="Arrow" TargetType="Label"> <!-- for a 20 point font -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Path Data="M13.374023,5.2858715 C16.37207,5.2858715 18.928223,6.3430004 21.04248,8.4572582 C23.156736,10.571516 24.213865,13.127669 24.213867,16.125715 C24.213865,19.123762 23.156736,21.679914 21.04248,23.794172 C18.928223,25.90843 16.37207,26.965559 13.374023,26.965559 C11.05957,26.965559 8.9770508,26.311262 7.1264648,25.002668 C5.2758789,23.694075 3.9501951,21.941145 3.1494141,19.743879 L16.259766,19.743879 L16.259766,23.347395 L23.496094,16.125715 L16.259766,8.9040356 L16.259766,12.507551 L3.1494141,12.507551 C3.9501951,10.310286 5.2758789,8.5573559 7.1264648,7.2487621 C8.9770508,5.9401684 11.05957,5.2858715 13.374023,5.2858715 z" Fill="Black" Margin="13.149,15.286,22.519,19.634" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="LargeArrow" TargetType="Label"> <!-- for a 50 point font -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Path Data="M22.290039,8.8142319 C27.286783,8.8142319 31.547037,10.576115 35.070801,14.099876 C38.594563,17.623642 40.356445,21.883896 40.356445,26.880638 C40.356445,31.877384 38.594563,36.137638 35.070801,39.6614 C31.547037,43.185162 27.286783,44.947044 22.290039,44.947044 C18.432617,44.947044 14.961751,43.856548 11.877441,41.67556 C8.7931309,39.494572 6.5836582,36.573021 5.2490234,32.910912 L27.099609,32.910912 L27.099609,38.916771 L39.160156,26.880638 L27.099609,14.844505 L27.099609,20.850365 L5.2490234,20.850365 C6.5836582,17.188257 8.7931309,14.266708 11.877441,12.085716 C14.961751,9.9047279 18.432617,8.8142319 22.290039,8.8142319 z" Fill="Black" HorizontalAlignment="Left" Height="36.133" Margin="13.149,15.286,22.519,19.634" RenderTransformOrigin="0.5,0.5" Stretch="Fill" VerticalAlignment="Top" Width="35.107">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="LargeTick" TargetType="Label"> <!-- for a 50 point font -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Path Data="M36.621094,6.6657944 L37.475586,7.8864975 C33.992512,10.506943 30.118814,14.5434 25.854492,19.995872 C21.590168,25.448347 18.334961,30.542747 16.088867,35.279076 L14.282227,36.499779 C12.78483,37.541447 11.767578,38.31456 11.230469,38.819115 C11.01888,38.054142 10.555013,36.800888 9.8388672,35.059349 L9.1552734,33.472435 C8.1787109,31.19379 7.2713213,29.50922 6.4331055,28.418724 C5.5948892,27.32823 4.6549478,26.603947 3.6132813,26.245872 C5.3710938,24.390404 6.9824219,23.462669 8.4472656,23.462669 C9.7005205,23.462669 11.092122,25.163517 12.62207,28.565208 L13.378906,30.274193 C16.129557,25.635521 19.661457,21.127058 23.974609,16.748802 C28.28776,12.370548 32.503254,9.0095444 36.621094,6.6657944 z" Fill="Black" HorizontalAlignment="Left" Height="32.153" Margin="12.168,13.997,24.248,23.311" RenderTransformOrigin="0.5,0.5" Stretch="Fill" VerticalAlignment="Top" Width="33.863">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="BigTick" TargetType="Label"> <!-- for a 40 point font -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Path Data="M36.621094,6.6657944 L37.475586,7.8864975 C33.992512,10.506943 30.118814,14.5434 25.854492,19.995872 C21.590168,25.448347 18.334961,30.542747 16.088867,35.279076 L14.282227,36.499779 C12.78483,37.541447 11.767578,38.31456 11.230469,38.819115 C11.01888,38.054142 10.555013,36.800888 9.8388672,35.059349 L9.1552734,33.472435 C8.1787109,31.19379 7.2713213,29.50922 6.4331055,28.418724 C5.5948892,27.32823 4.6549478,26.603947 3.6132813,26.245872 C5.3710938,24.390404 6.9824219,23.462669 8.4472656,23.462669 C9.7005205,23.462669 11.092122,25.163517 12.62207,28.565208 L13.378906,30.274193 C16.129557,25.635521 19.661457,21.127058 23.974609,16.748802 C28.28776,12.370548 32.503254,9.0095444 36.621094,6.6657944 z" Fill="Black" HorizontalAlignment="Center" Height="32.153" Margin="0,0,0,27.684" RenderTransformOrigin="0.5,0.5" Stretch="Fill" VerticalAlignment="Bottom" Width="33.863">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="WellTemplate" TargetType="Ellipse">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Stroke" Value="Black" />
+        <Setter Property="StrokeThickness" Value="2"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Stretch" Value="Uniform"/>
+    </Style>
+
+
+</ResourceDictionary>

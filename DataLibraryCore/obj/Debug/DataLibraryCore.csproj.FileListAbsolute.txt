@@ -1,0 +1,5 @@
+C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\bin\Debug\DataLibraryCore.dll
+C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\bin\Debug\DataLibraryCore.pdb
+C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\obj\Debug\DataLibraryCore.csprojResolveAssemblyReference.cache
+C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\obj\Debug\DataLibraryCore.dll
+C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\obj\Debug\DataLibraryCore.pdb
