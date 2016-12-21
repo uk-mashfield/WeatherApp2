@@ -15,9 +15,6 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
     [Category("DataTest")]
     public class When_Temp_10c_From_BBC_And_68f_From_Accu : Given_A_WeatherAppModel
     {
-        private string BBC_Data = "{\"location\":\"a\",\"temperatureCelsius\":10.0,\"windSpeedKph\":8.0}";
-        private string Accu_data = "{\"temperatureFahrenheit\":68.0,\"where\":\"a\",\"windSpeedMph\":15.0}";
-
         private IWeatherData _mockBBCWeather;
         private IWeatherData _mockAccuWeather;
 
@@ -38,8 +35,8 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         {
             MockDisplayStrategy.GetDisplayValue(Arg.Any<IList<double>>()).Returns(15);
 
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddTemperatureData(10.0d);
+            SUT.AddTemperatureData(20d);
 
             SUT.CurrentTempType = "Celsius";
 
@@ -51,8 +48,8 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         {
             MockConverters.CelciusToFahrenHeight(Arg.Any<double>()).Returns(59);
 
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddTemperatureData(10.0d);
+            SUT.AddTemperatureData(20d);
 
             SUT.CurrentTempType = "Fahrenheit";
 

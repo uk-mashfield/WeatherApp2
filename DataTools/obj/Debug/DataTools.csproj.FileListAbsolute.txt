@@ -42,3 +42,5 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools\bin\Debug\Microsoft
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools\obj\Debug\DataTools.csprojResolveAssemblyReference.cache
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools\obj\Debug\DataTools.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools\obj\Debug\DataTools.pdb
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools\bin\Debug\Newtonsoft.Json.xml

@@ -23,8 +23,8 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         [Test]
         public void Then_Celcuis_Should_Be_15()
         {
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddTemperatureData(10.0d);
+            SUT.AddTemperatureData(DataConverters.FahrenHeightToCelcius(68.0d));
 
             SUT.CurrentTempType = "Celsius";
 
@@ -34,8 +34,8 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         [Test]
         public void Then_Fahrenheit_Should_Be_59()
         {
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddTemperatureData(10.0d);
+            SUT.AddTemperatureData(DataConverters.FahrenHeightToCelcius(68.0d));
 
             SUT.CurrentTempType = "Fahrenheit";
 

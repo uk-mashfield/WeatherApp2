@@ -34,7 +34,6 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Deb
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\NSubstitute.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\nunit.framework.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\BaseUnitTests.pdb
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\CoreData.pdb
@@ -44,7 +43,6 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Deb
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\NSubstitute.xml
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\nunit.framework.xml
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\Microsoft.Practices.Unity.xml
-C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibrary.UnitTests\obj\Debug\DataLibrary.UnitTests.csprojResolveAssemblyReference.cache

@@ -6,7 +6,9 @@ namespace DataLibraryCore.Interfaces
 
     public interface IWeatherAppModel : IBaseModel
     {
-        void AddDataEntry(string data);
+        void AddSpeedData(double windSpeed);
+
+        void AddTemperatureData(double temp);
 
         IList<string> ConnectionAPIs { get; }
 

@@ -12,12 +12,12 @@ namespace DataTools.DataHandlers
 
     public class DataRetrieval : IDataRetreival
     {
-        private readonly IWeatherAppModel _weatherAppModel;
+        private readonly IDataDeserializer _dataDeserializer;
         private readonly IList<string> _connectionAPIs;
 
-        public DataRetrieval(IWeatherAppModel weatherAppModel)
+        public DataRetrieval(IDataDeserializer dataDeserializer, IWeatherAppModel weatherAppModel)
         {
-            _weatherAppModel = weatherAppModel;
+            _dataDeserializer = dataDeserializer;
             _connectionAPIs = weatherAppModel.ConnectionAPIs;
         }
 
@@ -42,7 +42,7 @@ namespace DataTools.DataHandlers
                 return;
             }
 
-            _weatherAppModel.AddDataEntry(downloadStringCompletedEventArgs.Result);
+            _dataDeserializer.AddDataEntry(downloadStringCompletedEventArgs.Result);
         }
     }
 }

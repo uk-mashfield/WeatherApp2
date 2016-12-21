@@ -19,6 +19,7 @@ namespace DataTools
             container.RegisterType<IDataConverters, DataConverters>();
             container.RegisterType<IDataRetreival, DataRetrieval>();
             container.RegisterType<IDisplayStrategy, AverageDisplayValue>();
+            container.RegisterType<IDataDeserializer, DataDeserializer>();
         }
     }
 }

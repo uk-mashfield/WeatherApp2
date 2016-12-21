@@ -5,7 +5,6 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using CoreData.APIData;
-    using CoreData.GenericData;
     using CoreData.Interfaces;
     using NSubstitute;
     using NUnit.Framework;
@@ -15,9 +14,6 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
     [Category("DataTest")]
     public class When_Speed_9kph_From_BBC_And_10mph_From_Accu : Given_A_WeatherAppModel
     {
-        private string BBC_Data = "{\"location\":\"a\",\"temperatureCelsius\":10.0,\"windSpeedKph\":8.0}";
-        private string Accu_data = "{\"temperatureFahrenheit\":68.0,\"where\":\"a\",\"windSpeedMph\":15.0}";
-
         private IWeatherData _mockBBCWeather;
         private IWeatherData _mockAccuWeather;
 
@@ -38,8 +34,8 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         {
             MockConverters.KPHtoMPH(Arg.Any<double>()).Returns(7.5);
 
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddSpeedData(8.0d);
+            SUT.AddSpeedData(16.0934d);
 
             SUT.CurrentSpeedType = "MPH";
 
@@ -51,8 +47,8 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         {
             MockDisplayStrategy.GetDisplayValue(Arg.Any<IList<double>>()).Returns(12);
 
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddSpeedData(8.0d);
+            SUT.AddSpeedData(16.0934d);
 
             SUT.CurrentSpeedType = "KPH";
 

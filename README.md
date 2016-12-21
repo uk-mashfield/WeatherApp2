@@ -2,31 +2,14 @@
 
 4Com code test for prospective .NET developers.
 
-### Prerequisites
+To try and stay within the spirit of the exercise I set asside a few hours and stopped myself from doing more when the time was up.
 
-Follow the instructions at https://www.microsoft.com/net/core to install .NET Core
+This is a Unity / Prism MVVM wpf application inside the application folder -> weatherViewerApplication.
 
-### Brief
+If I was to further refine the application.
 
-Using the APIs in this repository, create an application or website which given a location, will query and then display an aggregated weather result.
-
-We find this challenge normally takes a few hours to complete, however you may spend as much time as you would like to produce a result you are happy with and believe meets all the requirements.
-Your code should be written in a way that shows you have a good understanding of common software design patterns and SOLID principles.
-Should there be any aspects, which given more time you would have refactored, please add a README, or comments, explaining what you would like to have done.
-
-You should submit a link to your repository (GitHub, GitLab, BitBucket, etc), rather than a compiled application / link to the deployed website.
-
-If you believe the brief is unclear in anyway or you have any questions please ask. 
-
-### Requirements
-
-Your application/website should:
-* Display the aggregated (average) result, both temperature and wind speed, from any APIs it has queried
-* Allow the user to choose which measurement unit they want results displayed in. Wind should be MPH or KPH and temperature should be Celsius or Fahrenheit
-* Allow for more APIs to be easily added in the future
-* Allow for other units of measure to be easily added in the future
-* Gracefully handle one or more of the APIs being down or slow to respond
-
-It should pass the following tests:
-*	Given temperatures of 10c from bbc and 68f from accuweather when searching then display either 15c or 59f depending on what the user has chosen
-*	Given wind speeds of 8kph from bbc and 10mph from accuweather when searching then display either 12kph or 7.5mph depending on what the user has chosen
+	* Address the decoding of the downloaded string, I am not at all happy with the way I am determining which data set and docding data as this does not feel at all 
+	  easily extensible, possibly a keyed collection of decoders, that are injected into here using a better mechanism of identification would make this easier to extend.
+	
+	* timeout mechanism is set to a hardcoded 3 seconds, so if the site is not availble it fails with a popup, maybe adding a retry and a different timeout to cope with slow sites,
+	  making this time out configurable.

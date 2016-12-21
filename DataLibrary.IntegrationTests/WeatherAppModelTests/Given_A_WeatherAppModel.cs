@@ -11,12 +11,15 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests
     [ExcludeFromCodeCoverage]
     public abstract class Given_A_WeatherAppModel : BaseUnitTestContext<WeatherAppModel>
     {
+        protected DataConverters DataConverters;
+
         protected override void SetContext()
         {
-            var dataConverters = new DataConverters();
+            DataConverters = new DataConverters();
+
             var displayStrategy = new AverageDisplayValue();
 
-            SUT = new WeatherAppModel(dataConverters, displayStrategy);
+            SUT = new WeatherAppModel(DataConverters, displayStrategy);
         }
     }
 }

@@ -16,5 +16,5 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\WeatherViewerApplication\Infr
 77-30775852
 Infrastructure\ApplicationTemplateDictionary.xaml;Infrastructure\BackGroundTemplate.xaml;Infrastructure\ButtonTemplates.xaml;Infrastructure\DataTemplates.xaml;Infrastructure\ValidatingControlTemplate.xaml;Views\MainWindow.xaml;Views\TitleBar.xaml;Views\TopLevelContent.xaml;
 
-False
+True
 

@@ -3,3 +3,8 @@ C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibrary
 C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\obj\Debug\DataLibraryCore.csprojResolveAssemblyReference.cache
 C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\obj\Debug\DataLibraryCore.dll
 C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataLibraryCore\obj\Debug\DataLibraryCore.pdb
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\bin\Debug\DataLibraryCore.dll
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\bin\Debug\DataLibraryCore.pdb
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\obj\Debug\DataLibraryCore.csprojResolveAssemblyReference.cache
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\obj\Debug\DataLibraryCore.dll
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\obj\Debug\DataLibraryCore.pdb

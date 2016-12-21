@@ -3,6 +3,7 @@
 namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
 {
     using System.Diagnostics.CodeAnalysis;
+    using DataTools.Converters;
     using NUnit.Framework;
 
     [TestFixture]
@@ -10,19 +11,11 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
     [Category("DataTest")]
     public class When_Speed_8kph_From_BBC_And_10mph_From_Accu : Given_A_WeatherAppModel
     {
-        private readonly string BBC_Data = "{\"location\":\"a\",\"temperatureCelsius\":10.0,\"windSpeedKph\":8.0}";
-        private readonly string Accu_data = "{\"temperatureFahrenheit\":68.0,\"where\":\"a\",\"windSpeedMph\":10.0}";
-
-        protected override void Because()
-        {
-            base.Because();
-        }
-
         [Test]
         public void Then_MPH_Should_Be_7_Point_5()
         {
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddSpeedData(8.0d);
+            SUT.AddSpeedData(DataConverters.MPHtoKPH(10.0d));
 
             SUT.CurrentSpeedType = "MPH";
 
@@ -32,8 +25,8 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         [Test]
         public void Then_KPH_Should_Be_12()
         {
-            SUT.AddDataEntry(BBC_Data);
-            SUT.AddDataEntry(Accu_data);
+            SUT.AddSpeedData(8.0d);
+            SUT.AddSpeedData(DataConverters.MPHtoKPH(10.0d));
 
             SUT.CurrentSpeedType = "KPH";
 

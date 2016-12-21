@@ -68,32 +68,16 @@ namespace DataLibrary.PersistenceModel
             _currentTempType = _temperatures.First();
         }
 
-        public void AddDataEntry(string data)
+        public void AddSpeedData(double windSpeed)
         {
-            // I really do not like this, if I get time I will return and do something better... #sloppy
-            IWeatherData genericData = null;
+            _speedData.Add(windSpeed);
+            updateCurrentSpeed();
+        }
 
-            if (data.Contains("location"))
-            {
-                // BBC
-                BbcWeatherResult results = JsonConvert.DeserializeObject<BbcWeatherResult>(data);
-                genericData = _dataConverters.BBCToGeneric(results);
-            }
-            else if (data.Contains("where"))
-            {
-                //ACCu
-                AccWeatherResult results = JsonConvert.DeserializeObject<AccWeatherResult>(data);
-                genericData = _dataConverters.AccuToGeneric(results);
-            }
-
-            if (genericData != null)
-            {
-                _speedData.Add(genericData.WindspeedKPH);
-                _temperatureData.Add(genericData.TemperatureCelsius);
-
-                updateCurrentSpeed();
-                updateCurrentTemp();
-            }
+        public void AddTemperatureData(double temp)
+        {
+            _temperatureData.Add(temp);
+            updateCurrentTemp();
         }
 
         private void updateCurrentSpeed()

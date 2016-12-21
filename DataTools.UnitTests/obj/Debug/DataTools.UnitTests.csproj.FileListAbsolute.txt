@@ -50,3 +50,5 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools.UnitTests\bin\Debug
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools.UnitTests\obj\Debug\DataTools.UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools.UnitTests\obj\Debug\DataTools.UnitTests.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools.UnitTests\obj\Debug\DataTools.UnitTests.pdb
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools.UnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataTools.UnitTests\bin\Debug\Newtonsoft.Json.xml
