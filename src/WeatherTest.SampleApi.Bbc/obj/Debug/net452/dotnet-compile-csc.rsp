@@ -8,8 +8,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\bin\Debug\net452\WeatherTest.SampleApi.Bbc.exe"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\bin\Debug\net452\WeatherTest.SampleApi.Bbc.exe"
 -r:"C:\Users\mark.ashfield\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\net451\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\mark.ashfield\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\net451\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\mark.ashfield\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\net451\Microsoft.AspNetCore.Cors.dll"
@@ -116,8 +116,8 @@
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tracing.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Primitives.dll"
--resource:"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\WeatherTest.SampleApi.Bbcdotnet-compile.deps.json",WeatherTest.SampleApi.Bbc.deps.json
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Program.cs"
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Startup.cs"
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Controllers\WeatherController.cs"
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Models\BbcWeatherResult.cs"
+-resource:"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\WeatherTest.SampleApi.Bbcdotnet-compile.deps.json",WeatherTest.SampleApi.Bbc.deps.json
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Program.cs"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Startup.cs"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Controllers\WeatherController.cs"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Models\BbcWeatherResult.cs"

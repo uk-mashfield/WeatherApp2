@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\WeatherViewerApplication\obj\Debug\
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\WeatherViewerApplication\obj\Debug\
 WeatherViewerApplication
 none
 false
 DEBUG;TRACE
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\WeatherViewerApplication\Infrastructure\App.xaml
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\WeatherViewerApplication\Infrastructure\App.xaml
 8-1380023980
 
 17-19606424
-77-604074039
+77-30775852
 Infrastructure\ApplicationTemplateDictionary.xaml;Infrastructure\BackGroundTemplate.xaml;Infrastructure\ButtonTemplates.xaml;Infrastructure\DataTemplates.xaml;Infrastructure\ValidatingControlTemplate.xaml;Views\MainWindow.xaml;Views\TitleBar.xaml;Views\TopLevelContent.xaml;
 
-True
+False
 

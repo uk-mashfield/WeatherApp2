@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary.UnitTests", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTools.UnitTests", "DataTools.UnitTests\DataTools.UnitTests.csproj", "{0CC914A2-C0BF-4A2D-8C55-EB6920AA9D47}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{C058952D-2164-4435-8052-3A1CEA1C1A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary.IntegrationTests", "DataLibrary.IntegrationTests\DataLibrary.IntegrationTests.csproj", "{D1B85542-F2B8-41F7-A537-F165593D9DE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,10 @@ Global
 		{0CC914A2-C0BF-4A2D-8C55-EB6920AA9D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CC914A2-C0BF-4A2D-8C55-EB6920AA9D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CC914A2-C0BF-4A2D-8C55-EB6920AA9D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B85542-F2B8-41F7-A537-F165593D9DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B85542-F2B8-41F7-A537-F165593D9DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B85542-F2B8-41F7-A537-F165593D9DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B85542-F2B8-41F7-A537-F165593D9DE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,5 +125,6 @@ Global
 		{87300334-8C6F-4B41-B289-251C73CC05FD} = {441E314C-BD37-4F1E-A9B6-75F3DB763645}
 		{CA18CB3D-6B56-4A2F-BA95-0674B598B1A6} = {441E314C-BD37-4F1E-A9B6-75F3DB763645}
 		{0CC914A2-C0BF-4A2D-8C55-EB6920AA9D47} = {441E314C-BD37-4F1E-A9B6-75F3DB763645}
+		{D1B85542-F2B8-41F7-A537-F165593D9DE8} = {C058952D-2164-4435-8052-3A1CEA1C1A19}
 	EndGlobalSection
 EndGlobal

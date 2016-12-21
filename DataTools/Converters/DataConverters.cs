@@ -32,14 +32,14 @@ namespace DataTools.Converters
 
         public IWeatherData BBCToGeneric(BbcWeatherResult data)
         {
-            var mph = KPHtoMPH(data.WindSpeedKph);
-            return new GenericWeatherData(data.Location, data.TemperatureCelsius, mph);
+            return new GenericWeatherData(data.Location, data.TemperatureCelsius, data.WindSpeedKph);
         }
 
         public IWeatherData AccuToGeneric(AccWeatherResult data)
         {
             var celcius = FahrenHeightToCelcius(data.TemperatureFahrenheit);
-            return new GenericWeatherData(data.Where, celcius, data.WindSpeedMph);
+            var kph = MPHtoKPH(data.WindSpeedMph);
+            return new GenericWeatherData(data.Where, celcius, kph);
         }
     }
 }

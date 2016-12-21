@@ -8,8 +8,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Accu\obj\Debug\net452\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Accu\bin\Debug\net452\WeatherTest.SampleApi.Accu.exe"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Accu\obj\Debug\net452\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Accu\bin\Debug\net452\WeatherTest.SampleApi.Accu.exe"
 -r:"C:\Users\mark.ashfield\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\net451\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\mark.ashfield\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\net451\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\mark.ashfield\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\net451\Microsoft.AspNetCore.Cors.dll"
@@ -116,8 +116,8 @@
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tracing.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Primitives.dll"
--resource:"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Accu\obj\Debug\net452\WeatherTest.SampleApi.Accudotnet-compile.deps.json",WeatherTest.SampleApi.Accu.deps.json
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Accu\Program.cs"
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Accu\Startup.cs"
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Accu\Controllers\WeatherController.cs"
-"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Accu\Models\AccWeatherResult.cs"
+-resource:"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Accu\obj\Debug\net452\WeatherTest.SampleApi.Accudotnet-compile.deps.json",WeatherTest.SampleApi.Accu.deps.json
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Accu\Program.cs"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Accu\Startup.cs"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Accu\Controllers\WeatherController.cs"
+"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Accu\Models\AccWeatherResult.cs"

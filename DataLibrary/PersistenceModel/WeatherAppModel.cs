@@ -57,7 +57,7 @@ namespace DataLibrary.PersistenceModel
 
             _displayConverters = new Dictionary<string, Func<double, double>>
             {
-                {KPH, d => _dataConverters.MPHtoKPH(d)},
+                {MPH, d => _dataConverters.KPHtoMPH(d)},
                 {Fahrenheit, d => _dataConverters.CelciusToFahrenHeight(d)}
             };
 
@@ -88,7 +88,7 @@ namespace DataLibrary.PersistenceModel
 
             if (genericData != null)
             {
-                _speedData.Add(genericData.WindspeedMPH);
+                _speedData.Add(genericData.WindspeedKPH);
                 _temperatureData.Add(genericData.TemperatureCelsius);
 
                 updateCurrentSpeed();

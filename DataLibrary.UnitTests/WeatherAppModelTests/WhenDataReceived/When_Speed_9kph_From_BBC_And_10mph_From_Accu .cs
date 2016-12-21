@@ -27,16 +27,16 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
             _mockBBCWeather = Substitute.For<IWeatherData>();
             _mockAccuWeather = Substitute.For<IWeatherData>();
 
-            _mockBBCWeather.WindspeedMPH.Returns(4.97d);
-            _mockAccuWeather.WindspeedMPH.Returns(10d);
+            _mockBBCWeather.WindspeedKPH.Returns(4.97d);
+            _mockAccuWeather.WindspeedKPH.Returns(10d);
             MockConverters.BBCToGeneric(Arg.Any<BbcWeatherResult>()).Returns(_mockBBCWeather);
             MockConverters.AccuToGeneric(Arg.Any<AccWeatherResult>()).Returns(_mockAccuWeather);
         }
 
         [Test]
-        public void Then_MPH_Should_Be_7_Point_5()
+        public void Then_MPH_Display_Should_Use_Converter()
         {
-            MockDisplayStrategy.GetDisplayValue(Arg.Any<IList<double>>()).Returns(7.5);
+            MockConverters.KPHtoMPH(Arg.Any<double>()).Returns(7.5);
 
             SUT.AddDataEntry(BBC_Data);
             SUT.AddDataEntry(Accu_data);
@@ -47,9 +47,9 @@ namespace DataLibrary.UnitTests.WeatherAppModelTests.WhenDataReceived
         }
 
         [Test]
-        public void Then_KPH_Should_Be_12()
+        public void Then_KPH_Should_Be_Direct_Display()
         {
-            MockConverters.MPHtoKPH(Arg.Any<double>()).Returns(12);
+            MockDisplayStrategy.GetDisplayValue(Arg.Any<IList<double>>()).Returns(12);
 
             SUT.AddDataEntry(BBC_Data);
             SUT.AddDataEntry(Accu_data);

@@ -5,3 +5,10 @@ C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataToolsCo
 C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataToolsCore\obj\Debug\DataToolsCore.pdb
 C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataToolsCore\bin\Debug\CoreData.dll
 C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\DataToolsCore\bin\Debug\CoreData.pdb
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\bin\Debug\DataToolsCore.dll
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\bin\Debug\DataToolsCore.pdb
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\bin\Debug\CoreData.dll
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\bin\Debug\CoreData.pdb
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\obj\Debug\DataToolsCore.csprojResolveAssemblyReference.cache
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\obj\Debug\DataToolsCore.dll
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\obj\Debug\DataToolsCore.pdb

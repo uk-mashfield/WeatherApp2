@@ -6,6 +6,6 @@ namespace CoreData.Interfaces
     {
         string Location { get; }
         double TemperatureCelsius { get; }
-        double WindspeedMPH { get; }
+        double WindspeedKPH { get; }
     }
 }

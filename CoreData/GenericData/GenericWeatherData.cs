@@ -10,11 +10,11 @@ namespace CoreData.GenericData
         {
             Location = location;
             TemperatureCelsius = temperature;
-            WindspeedMPH = speed;
+            WindspeedKPH = speed;
         }
 
         public string Location { get; }
         public double TemperatureCelsius { get; }
-        public double WindspeedMPH { get; }
+        public double WindspeedKPH { get; }
     }
 }

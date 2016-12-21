@@ -1,5 +1,5 @@
---temp-output:C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\
---out:C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\bin\Debug\net452\WeatherTest.SampleApi.Bbc.exe
+--temp-output:C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\
+--out:C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\bin\Debug\net452\WeatherTest.SampleApi.Bbc.exe
 --define:DEBUG
 --define:TRACE
 --define:NET452
@@ -120,8 +120,8 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tracing.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Primitives.dll
---resource:"C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\WeatherTest.SampleApi.Bbcdotnet-compile.deps.json",WeatherTest.SampleApi.Bbc.deps.json
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Program.cs
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Startup.cs
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Controllers\WeatherController.cs
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\src\WeatherTest.SampleApi.Bbc\Models\BbcWeatherResult.cs
+--resource:"C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\obj\Debug\net452\WeatherTest.SampleApi.Bbcdotnet-compile.deps.json",WeatherTest.SampleApi.Bbc.deps.json
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Program.cs
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Startup.cs
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Controllers\WeatherController.cs
+C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\src\WeatherTest.SampleApi.Bbc\Models\BbcWeatherResult.cs
