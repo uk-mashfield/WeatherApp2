@@ -1,0 +1,4 @@
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\bin\Release\DataLibraryCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\bin\Release\DataLibraryCore.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\obj\Release\DataLibraryCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\obj\Release\DataLibraryCore.pdb

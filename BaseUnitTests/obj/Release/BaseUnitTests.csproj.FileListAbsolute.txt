@@ -1,0 +1,6 @@
+C:\Users\Terri\Documents\GitHub\WeatherApp2\BaseUnitTests\bin\Release\BaseUnitTests.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\BaseUnitTests\bin\Release\BaseUnitTests.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\BaseUnitTests\bin\Release\nunit.framework.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\BaseUnitTests\bin\Release\nunit.framework.xml
+C:\Users\Terri\Documents\GitHub\WeatherApp2\BaseUnitTests\obj\Release\BaseUnitTests.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\BaseUnitTests\obj\Release\BaseUnitTests.pdb

@@ -1,0 +1,4 @@
+C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\bin\Release\WebTools.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\bin\Release\WebTools.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\obj\Release\WebTools.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\obj\Release\WebTools.pdb

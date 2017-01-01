@@ -8,3 +8,7 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\CoreData\bin\Debug\CoreData.p
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\CoreData\obj\Debug\CoreData.csprojResolveAssemblyReference.cache
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\CoreData\obj\Debug\CoreData.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\CoreData\obj\Debug\CoreData.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\bin\Debug\CoreData.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\bin\Debug\CoreData.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\obj\Debug\CoreData.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\obj\Debug\CoreData.pdb

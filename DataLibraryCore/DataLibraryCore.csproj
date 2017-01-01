@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\DownloadProgressEnum.cs" />
     <Compile Include="Interfaces\IBaseModel.cs" />
     <Compile Include="Interfaces\IWeatherAppModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

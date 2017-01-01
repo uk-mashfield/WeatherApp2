@@ -11,6 +11,7 @@ namespace WeatherViewerApplication.ViewModels
     using DataToolsCore.Interfaces;
     using Prism.Commands;
     using Prism.Regions;
+    using System.Windows.Threading;
 
     public class TopLevelContentViewModel : BaseViewModel, IDataErrorInfo
     {
@@ -26,6 +27,7 @@ namespace WeatherViewerApplication.ViewModels
         private string _temperature;
         private IEnumerable<string> _temperatureItems;
         private string _currentlySelectedTemperature;
+        private Dispatcher _currentDispatcher;
 
         public TopLevelContentViewModel(IWeatherAppModel weatherAppModel, IDataRetreival dataRetreival)
         {
@@ -34,6 +36,8 @@ namespace WeatherViewerApplication.ViewModels
             DataRetrievalButtonCommand = new DelegateCommand(DataRetrievalAction, () => DataRetrievalButtonSafeToNavigate);
             ExitCommand = new DelegateCommand(ExitButtonAction, () => true);
 
+            _currentDispatcher = Dispatcher.CurrentDispatcher;
+
             NavigatedTo();
 
             _weatherAppModel.PropertyChanged += WeatherAppModelOnPropertyChanged;
@@ -41,6 +45,7 @@ namespace WeatherViewerApplication.ViewModels
 
         private void WeatherAppModelOnPropertyChanged(object sender, PropertyChangedEventArgs propertyChangedEventArgs)
         {
+            DataRetrievalButtonSafeToNavigate = ValidateDataRetrievalButton(null);
             WindSpeed = _weatherAppModel.DisplaySpeed.ToString();
             Temperature = _weatherAppModel.DisplayTemperature.ToString();
         }
@@ -66,7 +71,9 @@ namespace WeatherViewerApplication.ViewModels
 
         private void DataRetrievalAction()
         {
+            _weatherAppModel.DataRetrievalStarted();
             _dataRetreival.GetWeatherData(LocationValue);
+
         }
 
         public string WindSpeed
@@ -202,10 +209,16 @@ namespace WeatherViewerApplication.ViewModels
                     result = "Please enter a valid project name.";
                 }
 
-                DataRetrievalButtonSafeToNavigate = CheckSafeToRetrieveData(result);
+                DataRetrievalButtonSafeToNavigate = ValidateDataRetrievalButton(result);
 
                 return result;
             }
+        }
+
+        private bool ValidateDataRetrievalButton(string validationError)
+        {
+            return _weatherAppModel.CurrentDownloadStatus == DataLibraryCore.Enums.DownloadProgressEnum.Completed
+                && CheckSafeToRetrieveData(validationError);
         }
 
         /// <summary>
@@ -248,7 +261,10 @@ namespace WeatherViewerApplication.ViewModels
             {
                 _dataRetrievalButtonSafeToNavigate = value;
 
-                ((DelegateCommand)DataRetrievalButtonCommand).RaiseCanExecuteChanged();
+                _currentDispatcher.Invoke(() =>
+               {
+                   ((DelegateCommand)DataRetrievalButtonCommand).RaiseCanExecuteChanged();
+               });
             }
         }
 

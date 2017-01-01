@@ -2,6 +2,7 @@
 
 namespace DataLibraryCore.Interfaces
 {
+    using Enums;
     using System.Collections.Generic;
 
     public interface IWeatherAppModel : IBaseModel
@@ -21,5 +22,12 @@ namespace DataLibraryCore.Interfaces
 
         string CurrentSpeedType { get; set; }
         string CurrentTempType { get; set; }
+
+        DownloadProgressEnum CurrentDownloadStatus { get; }
+
+        void DataRetrievalStarted();
+
+        void DownloadStarted();
+        void DownloadCompleted();
     }
 }

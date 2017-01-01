@@ -7,6 +7,7 @@ namespace DataLibrary.PersistenceModel
     using System.Linq;
     using CoreData.APIData;
     using CoreData.Interfaces;
+    using DataLibraryCore.Enums;
     using DataLibraryCore.Interfaces;
     using DataToolsCore.Interfaces;
     using Newtonsoft.Json;
@@ -32,11 +33,15 @@ namespace DataLibrary.PersistenceModel
         private const string KPH = "KPH";
         private const string Celsius = "Celsius";
         private const string Fahrenheit = "Fahrenheit";
+        private DownloadProgressEnum _currentDownloadStatus;
+        private int _currentActiveDownloads;
+        private int _currentCompletedDownloads;
 
         public WeatherAppModel(IDataConverters dataConverters, IDisplayStrategy displayStrategy)
         {
             _dataConverters = dataConverters;
             _displayStrategy = displayStrategy;
+            _currentDownloadStatus = DownloadProgressEnum.Completed;
             _connectionAPIs = new List<string>
             {
                 "http://localhost:60350/Weather/",
@@ -91,6 +96,36 @@ namespace DataLibrary.PersistenceModel
         {
             var temp = _displayStrategy.GetDisplayValue(_temperatureData);
             DisplayTemperature = _displayConverters.ContainsKey(CurrentTempType) ? _displayConverters[CurrentTempType](temp) : temp;
+        }
+
+        public void DownloadStarted()
+        {
+            _currentActiveDownloads++;
+        }
+
+        public void DownloadCompleted()
+        {
+            _currentCompletedDownloads++;
+
+            if ( _currentActiveDownloads == _currentCompletedDownloads) // all downloads completed
+            {
+                _currentActiveDownloads = 0;
+                _currentCompletedDownloads = 0;
+                CurrentDownloadStatus = DownloadProgressEnum.Completed;
+            }
+        }
+
+        public void DataRetrievalStarted()
+
+        { 
+            CurrentDownloadStatus = DownloadProgressEnum.InProgress;
+            DeleteDownloadData();
+        }
+
+        private void DeleteDownloadData()
+        {
+            _speedData.Clear();
+            _temperatureData.Clear();
         }
 
         public IList<string> ConnectionAPIs
@@ -167,6 +202,21 @@ namespace DataLibrary.PersistenceModel
             {
                 _currentTempType = value;
                 updateCurrentTemp();
+            }
+        }
+
+        public DownloadProgressEnum CurrentDownloadStatus
+        {
+            get
+            {
+                return _currentDownloadStatus; 
+            }
+
+            set
+            {
+                _currentDownloadStatus = value;
+
+                OnPropertyChanged(nameof(CurrentDownloadStatus));
             }
         }
     }

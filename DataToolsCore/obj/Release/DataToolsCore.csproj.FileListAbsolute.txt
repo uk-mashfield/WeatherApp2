@@ -1,0 +1,7 @@
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Release\DataToolsCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Release\DataToolsCore.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Release\CoreData.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Release\CoreData.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\obj\Release\DataToolsCore.csprojResolveAssemblyReference.cache
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\obj\Release\DataToolsCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\obj\Release\DataToolsCore.pdb

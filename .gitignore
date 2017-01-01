@@ -48,3 +48,9 @@ Temporary Items
 *.suo
 *.cache
 *.cache
+BaseUnitTests/bin/Debug/BaseUnitTests.dll
+*.dll
+BaseUnitTests/bin/Debug/BaseUnitTests.pdb
+*.dll
+*.pdb
+CoreData/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache

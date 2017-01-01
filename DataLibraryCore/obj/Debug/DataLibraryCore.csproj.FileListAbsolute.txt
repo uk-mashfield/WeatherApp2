@@ -8,3 +8,7 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\bin\Debug\Dat
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\obj\Debug\DataLibraryCore.csprojResolveAssemblyReference.cache
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\obj\Debug\DataLibraryCore.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataLibraryCore\obj\Debug\DataLibraryCore.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\bin\Debug\DataLibraryCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\bin\Debug\DataLibraryCore.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\obj\Debug\DataLibraryCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataLibraryCore\obj\Debug\DataLibraryCore.pdb

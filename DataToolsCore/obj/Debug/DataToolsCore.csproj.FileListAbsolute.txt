@@ -12,3 +12,10 @@ C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\bin\Debug\CoreD
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\obj\Debug\DataToolsCore.csprojResolveAssemblyReference.cache
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\obj\Debug\DataToolsCore.dll
 C:\Users\mark.ashfield\Documents\GitHub\WeatherApp\DataToolsCore\obj\Debug\DataToolsCore.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Debug\DataToolsCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Debug\DataToolsCore.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Debug\CoreData.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\bin\Debug\CoreData.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\obj\Debug\DataToolsCore.csprojResolveAssemblyReference.cache
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\obj\Debug\DataToolsCore.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\DataToolsCore\obj\Debug\DataToolsCore.pdb

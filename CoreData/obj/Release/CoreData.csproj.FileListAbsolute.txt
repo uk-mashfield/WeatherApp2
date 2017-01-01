@@ -1,0 +1,4 @@
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\bin\Release\CoreData.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\bin\Release\CoreData.pdb
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\obj\Release\CoreData.dll
+C:\Users\Terri\Documents\GitHub\WeatherApp2\CoreData\obj\Release\CoreData.pdb
