@@ -1,9 +1,0 @@
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\WebTools\bin\Debug\WebTools.dll
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\WebTools\bin\Debug\WebTools.pdb
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\WebTools\obj\Debug\WebTools.csprojResolveAssemblyReference.cache
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\WebTools\obj\Debug\WebTools.dll
-C:\Users\mark.ashfield\Desktop\WeatherTest-master\WeatherTest-master\WebTools\obj\Debug\WebTools.pdb
-C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\bin\Debug\WebTools.dll
-C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\bin\Debug\WebTools.pdb
-C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\obj\Debug\WebTools.dll
-C:\Users\Terri\Documents\GitHub\WeatherApp2\WebTools\obj\Debug\WebTools.pdb
